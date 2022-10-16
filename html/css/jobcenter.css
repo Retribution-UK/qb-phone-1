@@ -5,7 +5,7 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background: #242833;
+    background: #332424;
 }
 
 .job-header {
@@ -65,7 +65,7 @@
     /* box-shadow: 0rem 0rem 0.2rem 0.02rem #000000a6; */
 }
 .job-class-body-job:hover{
-    background: #0d1218c0;
+    background: #180d0dc0;
 }
 
 .job-showitems-other{

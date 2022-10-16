@@ -9,7 +9,7 @@
     display: none;
     height: 100%;
     width: 100%;
-    background: #212832;
+    background: #322121;
     overflow: hidden;
 }
 
@@ -53,7 +53,7 @@
     left: 15px;
     height: 5.5vh;
     margin-bottom: 8px;
-    background-color: rgb(44, 70, 95);
+    background-color: rgb(95, 44, 70);
     box-shadow: rgba(0, 0, 0, 0.557) 0rem 0rem 0.1rem 0.01rem;
     border-radius: 0.15rem;
     border-bottom: 0.1vh solid rgba(245, 245, 245, 0.68);
@@ -105,7 +105,7 @@
 }
 
 .gopro-action-buttons > i:hover {
-    color: #2c465f;
+    color: #5f2c57;
 }
 
 .gopro-list:hover .gopro-action-buttons {

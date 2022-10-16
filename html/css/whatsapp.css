@@ -17,13 +17,13 @@
     position: relative;
     height: 6.7vh;
     width: 100%;
-    background-color: #212832;
+    background-color: #322121;
 }
 .whatsapp-header-footer {
     position: relative;
     height: 5.5vh;
     width: 100%;
-    background-color: #212832;
+    background-color: #322121;
 }
 .whatsapp-header-footer > p {
     padding-top: 1.3vh;
@@ -156,7 +156,7 @@
     width: 100%;
     height: 79.6%;
     top: 12.0vh;
-    background: #212832;
+    background: #322121;
     overflow-y: scroll;
     overflow-x: hidden !important;
 }
@@ -198,7 +198,7 @@
     margin-left: 10%;
     margin-bottom: 7px;
     color: white;
-    background-color: rgb(44, 70, 95);
+    background-color: rgb(95, 44, 44);
     transition: all 0.15s ease 0s;
     box-shadow: rgba(0, 0, 0, 0.557) 0rem 0rem 0.1rem 0.01rem;
     border-radius: 0.30rem;
@@ -333,7 +333,7 @@
     top: 0;
     width: 100%;
     height: 9vh;
-    background-color: rgba(7, 94, 84, 0);
+    background-color: rgba(94, 74, 7, 0);
 }
 
 .whatsapp-header-top-openedchat {
@@ -378,7 +378,7 @@
 #whatsapp-openedchat-message {
     position: absolute;
     border: none;
-    background: #2d383e;
+    background: #3e2d2d;
     margin: 0px auto;
     height: 3.5vh;
     border-radius: 3vh;
@@ -418,7 +418,7 @@
     color: white;
     text-align: center;
     line-height: 3.0vh;
-    background: #0f80f8;
+    background: #f80f0f;
     font-size: 1.5vh;
     width: 3.0vh;
     height: 3.0vh;
@@ -428,7 +428,7 @@
 }
 
 #whatsapp-openedchat-send:hover {
-    background: #0c65c4;
+    background: #c40c0c;
 }
 
 .whatsapp-openedchat-messages::-webkit-scrollbar {
@@ -464,7 +464,7 @@
 }
 
 .whatsapp-openedchat-message-me {
-    background: #1c7def;
+    background: #ef1c1c;
     color: white;
     border-radius: 15px;
     float: right;
@@ -473,7 +473,7 @@
 }
 
 .whatsapp-openedchat-message-other {
-    background: #35484f;
+    background: #4f3535;
     color: white;
     border-radius: 15px;
     left: 1.5vh;
@@ -502,7 +502,7 @@
     z-index: 2;
     margin: 0.2vh auto 0.7vh;
     text-align: center;
-    background: #1f2a30;
+    background: #301f1f;
     width: fit-content;
     padding: 0.4vh;
     height: 2vh;
@@ -589,5 +589,5 @@
 }
 
 .emojionearea.focused {
-    border-color: #245247;
+    border-color: #524f24;
 }
