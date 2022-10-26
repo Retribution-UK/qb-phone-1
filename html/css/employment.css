@@ -4,7 +4,7 @@
     display: none;
     height: 100%;
     width: 100%;
-    background-color: #212832;
+    background-color: #322121;
     overflow: hidden;
 }
 
@@ -71,7 +71,7 @@
     color: white;
     height: 6vh;
     margin-bottom: 8px;
-    background-color: rgb(44, 70, 95);
+    background-color: rgb(95, 44, 44);
     box-shadow: rgba(0, 0, 0, 0.557) 0rem 0rem 0.1rem 0.01rem;
     border-bottom: .1vh solid #fff;
 }
@@ -82,13 +82,13 @@
     color: white;
     height: 6vh;
     margin-bottom: 8px;
-    background-color: rgb(44, 70, 95);
+    background-color: rgb(95, 44, 44);
     box-shadow: rgba(0, 0, 0, 0.557) 0rem 0rem 0.1rem 0.01rem;
     border-bottom: .1vh solid #fff;
 }
 
 .employment-job-list:hover {
-    background-color: #15222e;
+    background-color: #2e1515;
 }
 
 .employment-icon {
@@ -242,11 +242,11 @@
 }
 
 .employment-action-buttons > i:hover {
-    color: #2c465f;
+    color: #5f2c2c;
 }
 
 .employment-job-list:hover .employment-action-buttons {
-    background: #0d1218c0;
+    background: #180d0dc0;
     visibility: visible;
 }
 
@@ -262,7 +262,7 @@
     font-size: 14px;
     color: #ffffff;
     text-align: left;
-    background-color: rgb(44, 70, 95);
+    background-color: rgb(95, 44, 44);
     outline: none;
     border-bottom: .1vh solid #fff;
 }
@@ -283,12 +283,12 @@
 }
 
 .grade-dropdown:active {
-    background-color: #3F607D
+    background-color: #7d3f3f
 }
 
 .grade-dropdown.active:hover,
 .grade-dropdown.active {
-    background-color: #3F607D
+    background-color: #7d3f3f
 }
 
 .grade-dropdown.active .select > i {
@@ -297,7 +297,7 @@
 
 .grade-dropdown .grade-dropdown-menu {
     position: absolute;
-    background-color: #333943;
+    background-color: #433333;
     color: white;
     width: 100%;
     left: 0;
@@ -321,9 +321,9 @@
 }
 
 .grade-dropdown .grade-dropdown-menu li:hover {
-    background-color: #505969
+    background-color: #695050
 }
 
 .grade-dropdown .grade-dropdown-menu li:active {
-    background-color: #505969
+    background-color: #695050
 }

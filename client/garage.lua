@@ -42,7 +42,7 @@ end)
 -- Events
 
 RegisterNetEvent('qb-phone:client:sendVehicleRequest', function(data, seller)
-    local success = exports['qb-phone']:PhoneNotification("VEHICLE SALE", 'Purchase '..data.plate..' for $'..data.price, 'fas fa-map-pin', '#b3e0f2', "NONE", 'fas fa-check-circle', 'fas fa-times-circle')
+    local success = exports['qb-phone']:PhoneNotification("VEHICLE SALE", 'Purchase '..data.plate..' for £'..data.price, 'fas fa-map-pin', '#b3e0f2', "NONE", 'fas fa-check-circle', 'fas fa-times-circle')
     if success then
         TriggerServerEvent("qb-phone:server:sellVehicle", data, seller, 'accepted')
     else

@@ -12,7 +12,7 @@
     display: none;
     height: 100%;
     width: 100%;
-    background: #212832;
+    background: #322121;
     overflow: hidden;
 }
 
@@ -94,7 +94,7 @@
     height: 100%;
     width: 100%;
     top: 4.0vh;
-    background: #212832;
+    background: #322121;
 }
 
 #phone-recent-call-number{
@@ -321,7 +321,7 @@
 }
 
 .phone-contact:hover .phone-contact-action-buttons {
-    background: #0d1218c0;
+    background: #180d0dc0;
     visibility: visible;
 }
 
@@ -350,7 +350,7 @@
 }
 
 .phone-recent-call:hover .phone-recent-call-action-buttons {
-    background: #0d1218c0;
+    background: #180d0dc0;
     visibility: visible;
 }
 

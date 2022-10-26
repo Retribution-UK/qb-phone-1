@@ -5,7 +5,7 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background: #242833;
+    background: #332424;
 }
 
 .casino-header {
@@ -56,7 +56,7 @@
     position: relative;
     left: 80%;
     width: 15%;
-    background: #2c465f;
+    background: #5f2c2c;
     color: whitesmoke;
     text-align: center;
     border-radius: 4px;
@@ -64,7 +64,7 @@
     transition: 0.2s;
 }
 .casino-dashboard-boss:hover{
-    background: #0d1218c0;
+    background: #180d0dc0;
 }
 
 .casino-dashboard-btn{
@@ -72,7 +72,7 @@
     margin-left: 6.5%;
     margin-bottom: 3%;
     color: whitesmoke;
-    background: #0d1218c0;
+    background: #180d0dc0;
     text-align: center;
     border-radius: 4px;
     transition: 0.2s;
@@ -91,12 +91,12 @@
     margin-bottom: 2%;
     color: whitesmoke;
     border-radius: 4px;
-    background: #2c465f;
+    background: #5f2c2c;
     transition: 0.2s;
     font-size: 130%;
 }
 .casino-license-body-main:hover{
-    background: #0d1218c0;
+    background: #180d0dc0;
 }
 
 .casino-license-icon-class{

@@ -23,7 +23,7 @@ function LoadCasinoJob(){
                                 '<br />'+
                                 '<br />'+
                                 '<br />'+
-                                '<div class="casino-text-clear" style="font-size: 600%;color: #0d1218c0;"><i class="fas fa-gem"></i></div>'
+                                '<div class="casino-text-clear" style="font-size: 600%;color: #180d0dc0;"><i class="fas fa-gem"></i></div>'
             $('.casino-list').append(AddOption);
         }
     });
@@ -97,7 +97,7 @@ function AddToChat(data){
                                 '<br />'+
                                 '<br />'+
                                 '<br />'+
-                                '<div class="casino-text-clear" style="font-size: 600%;color: #0d1218c0;"><i class="fas fa-gem"></i></div>'
+                                '<div class="casino-text-clear" style="font-size: 600%;color: #180d0dc0;"><i class="fas fa-gem"></i></div>'
             $('.casino-list').append(AddOption);
     }
 }

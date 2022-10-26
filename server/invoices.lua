@@ -14,7 +14,7 @@ RegisterNetEvent('qb-phone:server:InvoiceHandler')
             if Config.RenewedBanking then
                 local cid = Player.PlayerData.citizenid
                 local name = ("%s %s"):format(Player.PlayerData.charinfo.firstname, Player.PlayerData.charinfo.lastname)
-                exports['Renewed-Banking']:handleTransaction(cid, "Phone Invoice", amount, "Paid off phone invoice of $"..amount, name, name, "withdraw")
+                exports['Renewed-Banking']:handleTransaction(cid, "Phone Invoice", amount, "Paid off phone invoice of £"..amount, name, name, "withdraw")
             end
             -- Do shit
         end
@@ -38,7 +38,7 @@ RegisterNetEvent('qb-phone:server:PayMyInvoice', function(society, amount, invoi
         if SenderPly then
             TriggerClientEvent('qb-phone:client:CustomNotification', SenderPly.PlayerData.source,
                 "Invoice Paid off by " .. SenderPly.PlayerData.charinfo.firstname .. ".",
-                "Recent Invoice of $" .. amount .. " has been paid.",
+                "Recent Invoice of £" .. amount .. " has been paid.",
                 "fas fa-file-invoice-dollar",
                 "#1DA1F2",
                 7500
@@ -61,7 +61,7 @@ RegisterNetEvent('qb-phone:server:DeclineMyInvoice', function(amount, invoiceId,
     if SenderPly then
         TriggerClientEvent('qb-phone:client:CustomNotification', SenderPly.PlayerData.source,
             "Invoice Declined by " .. SenderPly.PlayerData.charinfo.firstname .. ".",
-            "Recent invoice of $" .. amount .. " has been declined.",
+            "Recent invoice of £" .. amount .. " has been declined.",
             "fas fa-file-invoice-dollar",
             "#1DA1F2",
             7500

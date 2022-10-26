@@ -2,25 +2,29 @@ Config = Config or {}
 
 -- Configs for Payment and Banking
 
-Config.RenewedBanking = true -- Either put this to true or false if you use Renewed Banking or not
+Config.RenewedBanking = false -- Either put this to true or false if you use Renewed Banking or not
 Config.RenewedFinances = false -- Either put this to true or false if you use Renewed Finances or not
 Config.RenewedCameras = false -- Either put this to true or false if you use Renewed Cameras or not
 
 Config.BillingCommissions = { -- This is a percentage (0.10) == 10%
-    mechanic = 0.10
+    ottos = 0.20,
+    catcafe = 0.20,
+    belmont = 0.20,
+    bahamas = 0.20,
+    mcgraffs = 0.20,
 }
 
 -- Web hook for camera ( NOT GO PRO )
-Config.Webhook = ''
+Config.Webhook = 'https://discord.com/api/webhooks/1031317490896216064/tIPy_uZxUt4xfHXr0V-5PwL97YPjxDxe1DkqQ8QSAeNh0tbG5NAFUkZ4YrJmvzPkwr1j'
 
 -- Item name for pings app ( Having a VPN sends an anonymous ping, else sends the players name)
 Config.VPNItem = 'vpn'
 
 -- The garage the vehicle goes to when you sell a car to a player
-Config.SellGarage = 'altastreet'
+Config.SellGarage = 'pillboxgarage'
 
 -- How Long Does The Player Have To Accept The Ping - This Is In Seconds
-Config.Timeout = 30
+Config.Timeout = 60
 
 -- How Long Does The Blip Remain On The Map - This Is In Seconds
 Config.BlipDuration = 30
@@ -36,7 +40,7 @@ Config.MailDuration = 72 -- How many hours to load Mails (72 will load the past 
 
 Config.RepeatTimeout = 4000
 Config.CallRepeats = 10
-Config.AllowWalking = false -- Allow walking and driving with phone out
+Config.AllowWalking = true -- Allow walking and driving with phone out
 
 
 Config.PhoneApplications = {
@@ -47,7 +51,7 @@ Config.PhoneApplications = {
         icon = "fas fa-info-circle",
         tooltipText = "Details",
         tooltipPos = "top",
-        style = "font-size: 3.3vh";
+        style = "font-size: 3vh";
         job = false,
         blockedjobs = {},
         slot = 1,
@@ -57,10 +61,10 @@ Config.PhoneApplications = {
         app = "contacts",
         color = "#345b7a",
         color2 = "#122445",
-        icon = "fas fa-phone-volume",
+        icon = "fas fa-address-book",
         tooltipText = "Contacts",
         tooltipPos = "top",
-        style = "font-size: 3.3vh";
+        style = "font-size: 3vh";
         job = false,
         blockedjobs = {},
         slot = 2,
@@ -73,7 +77,7 @@ Config.PhoneApplications = {
         icon = "fas fa-phone-volume",
         tooltipText = "Phone",
         tooltipPos = "top",
-        style = "font-size: 3.3vh";
+        style = "font-size: 3vh";
         job = false,
         blockedjobs = {},
         slot = 3,
@@ -86,7 +90,7 @@ Config.PhoneApplications = {
         icon = "fas fa-comment",
         tooltipText = "Messages",
         tooltipPos = "top",
-        style = "font-size: 3.3vh";
+        style = "font-size: 3vh";
         job = false,
         blockedjobs = {},
         slot = 4,
@@ -99,7 +103,7 @@ Config.PhoneApplications = {
         icon = "fas fa-map-marker-alt",
         tooltipText = "Ping",
         tooltipPos = "top",
-        style = "font-size: 3.3vh";
+        style = "font-size: 3vh";
         job = false,
         blockedjobs = {},
         slot = 5,
@@ -119,9 +123,9 @@ Config.PhoneApplications = {
     },
     ["advert"] = {
         app = "advert",
-        color = "#ffc900",
-        color2 = "#f7c816",
-        icon = "fas fa-bullhorn",
+        color = "#ff0000",
+        color2 = "#f71616",
+        icon = "fas fa-ad",
         tooltipText = "Advertisements",
         style = "font-size: 2vh";
         job = false,
@@ -136,7 +140,7 @@ Config.PhoneApplications = {
         icon = "fab fa-twitter",
         tooltipText = "Twitter",
         tooltipPos = "top",
-        style = "color: #2cabe0; font-size: 3.3vh";
+        style = "color: #2cabe0; font-size: 3vh";
         job = false,
         blockedjobs = {},
         slot = 8,
@@ -148,12 +152,12 @@ Config.PhoneApplications = {
         color2 = "#bb345d",
         icon = "fas fa-car",
         tooltipText = "Vehicles",
-        style = "font-size: 3.3vh";
+        style = "font-size: 3vh";
         job = false,
         blockedjobs = {},
         slot = 9,
         Alerts = 0,
-    },
+    },--[[ 
     ["debt"] = {
         app = "debt",
         color = "#fdfeff",
@@ -164,13 +168,14 @@ Config.PhoneApplications = {
         blockedjobs = {},
         slot = 10,
         Alerts = 0,
-    },
+    }, ]]
     ["wenmo"] = {
         app = "wenmo",
-        color = "#151515",
-        color2 = "#161616",
-        icon = "fas fa-ad",
-        tooltipText = "Wenmo",
+        color = "#56cea5",
+        color2 = "#129365",
+        --color2 = "#fdbb2d",
+        icon = "fas fa-hand-holding-usd",
+        tooltipText = "Money Transfer",
         job = false,
         blockedjobs = {},
         slot = 11,
@@ -182,7 +187,7 @@ Config.PhoneApplications = {
         color2 = "#aa4edd",
         icon = "fas fa-sticky-note",
         tooltipText = "Documents",
-        style = "font-size: 3.3vh";
+        style = "font-size: 3vh";
         job = false,
         blockedjobs = {},
         slot = 12,
@@ -199,7 +204,7 @@ Config.PhoneApplications = {
         blockedjobs = {},
         slot = 13,
         Alerts = 0,
-    },
+    },--[[ 
     ["crypto"] = {
         app = "crypto",
         color = "#000000",
@@ -211,7 +216,7 @@ Config.PhoneApplications = {
         blockedjobs = {},
         slot = 14,
         Alerts = 0,
-    },
+    }, ]]
     ["job"] = {
         app = "job",
         color = "#151515",
@@ -228,7 +233,7 @@ Config.PhoneApplications = {
         app = "jobcenter",
         color = "#151515",
         color2 = "#161616",
-        icon = "fas fa-id-badge",
+        icon = "fas fa-users",
         tooltipText = "Group",
         style = "color: #78bdfd; font-size: 2.7vh";
         job = false,
@@ -246,7 +251,7 @@ Config.PhoneApplications = {
         blockedjobs = {},
         slot = 17,
         Alerts = 0,
-    },
+    },--[[ 
     ["lsbn"] = {
         app = "lsbn",
         color = "#151515",
@@ -257,11 +262,11 @@ Config.PhoneApplications = {
         blockedjobs = {},
         slot = 18,
         Alerts = 0,
-    },
+    }, ]]
     ["taxi"] = {
         app = "taxi",
-        color = "#c6c900",
-        color2 = "#abad00",
+        color = "#ffc900",
+        color2 = "#f7c816",
         icon = "fas fa-briefcase",
         tooltipText = "Taxi",
         tooltipPos = "bottom",
@@ -309,7 +314,7 @@ Config.PhoneApplications = {
         blockedjobs = {},
         slot = 22,
         Alerts = 0,
-    },
+    },--[[ 
     ["racing"] = {
         app = "racing",
         color = "#353b48",
@@ -321,7 +326,7 @@ Config.PhoneApplications = {
         blockedjobs = {},
         slot = 23,
         Alerts = 0,
-    },
+    }, ]]
     ["bank"] = {
         app = "bank",
         color = "#9c88ff",
@@ -341,7 +346,7 @@ Config.PhoneApplications = {
         icon = "fas fa-camera",
         tooltipText = "camera",
         tooltipPos = "top",
-        style = "padding-right: .08vh; font-size: 3.3vh";
+        style = "padding-right: .08vh; font-size: 3vh";
         job = false,
         blockedjobs = {},
         slot = 25,
@@ -354,12 +359,12 @@ Config.PhoneApplications = {
         icon = "fab fa-discord",
         tooltipText = "Discord",
         tooltipPos = "top",
-        style = "padding-right: .08vh; font-size: 3.3vh";
+        style = "padding-right: .08vh; font-size: 3vh";
         job = false,
         blockedjobs = {},
         slot = 26,
         Alerts = 0,
-    },
+    },--[[ 
     ["meos"] = {
         app = "meos",
         color = "#004682",
@@ -370,7 +375,7 @@ Config.PhoneApplications = {
         blockedjobs = {},
         slot = 27,
         Alerts = 0,
-    },
+    }, ]]
 }
 
 Config.MaxSlots = 28
@@ -385,7 +390,7 @@ Config.JobCenter = {
         vpn = false,
         label = "Taxi",
         event = "qb-phone:jobcenter:taxi",
-    },
+    },--[[ 
     [3] = {
         vpn = true,
         label = "House Robbery",
@@ -395,13 +400,13 @@ Config.JobCenter = {
         vpn = true,
         label = "Oxy Run",
         event = "sn-oxyrun:client:chiduong",
-    },
-    [5] = {
+    }, ]]
+    [3] = {
         vpn = false,
         label = "PostOp Worker",
         event = "qb-phone:jobcenter:postop",
     },
-    [6] = {
+    [4] = {
         vpn = false,
         label = "Sanitaion Worker",
         event = "qb-phone:jobcenter:sanitation",

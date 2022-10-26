@@ -4,7 +4,7 @@
     display: none;
     height: 100%;
     width: 100%;
-    background-color: #212832;
+    background-color: #322121;
     overflow: hidden;
 }
 
@@ -69,7 +69,7 @@
 .crypto-list {
     padding: 4px;
     width: 100%;
-    background-color: rgb(44, 70, 95);
+    background-color: rgb(95, 44, 44);
     border-radius: 4px 4px 0px 0px;
     border-bottom: .1vh solid #fff;
     margin-bottom: 3.5%;
@@ -89,7 +89,7 @@
 }
 
 .crypto-vehicle:hover {
-    background-color: #0d1218c0;
+    background-color: #180d0dc0;
 }
 
 .crypto-label {
@@ -113,7 +113,7 @@
     /*line-height: 5vh;*/
     display: none;
     overflow: hidden;
-    background-color: rgb(44, 70, 95);
+    background-color: rgb(95, 44, 44);
     margin-bottom: 1.4vh;
 }
 

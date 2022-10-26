@@ -941,7 +941,7 @@ RegisterNetEvent('qb-phone:client:RemoveBankMoney', function(amount)
             action = "PhoneNotification",
             PhoneNotify = {
                 title = "Bank",
-                text = "$"..amount.." removed from your balance!",
+                text = "£"..amount.." removed from your balance!",
                 icon = "fas fa-university",
                 color = "#ff002f",
                 timeout = 3500,

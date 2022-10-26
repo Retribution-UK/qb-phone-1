@@ -69,7 +69,7 @@ QB.Phone.Functions.SetupApplications = function(data) {
             $(applicationSlot).css("background-image","-webkit-gradient(linear,0% 0%,0% 100%,color-stop(0.4, "+app.color+"),color-stop(0.9, "+app.color2+")");
 
 
-            var icon = '<i class="ApplicationIcon '+app.icon+'" style="'+app.style+'"></i>';
+            var icon = '<i class="ApplicationIcon '+app.icon+'" style="'+app.style+'"></i>';/*
             if (app.app == "meos") {
                 icon = '<img src="./img/apps/politie.png" class="police-icon">';
             } else if (app.app == "garage"){
@@ -78,9 +78,9 @@ QB.Phone.Functions.SetupApplications = function(data) {
                 icon = '<img src="./img/apps/Advertisements.png" class="advert-icon">';
             } else if (app.app == "calculator"){
                 icon = '<img src="./img/apps/calcilator.png" class="calc-icon">';
-            } /* else if (app.app == "employment"){
+            }  else if (app.app == "employment"){
                 icon = '<img src="./img/apps/employment.png" style="width: 87%;margin-top: 6%;margin-left: -2%;">';
-            } */ else if (app.app == "debt"){
+            } else if (app.app == "debt"){
                 icon = '<img src="./img/apps/debt.png">';
             } else if (app.app == "wenmo"){
                 icon = '<img src="./img/apps/wenmo.png" class="calc-icon">';
@@ -96,7 +96,7 @@ QB.Phone.Functions.SetupApplications = function(data) {
                 icon = '<img src="./img/apps/lsbn.png" style="width: 85%;margin-top: 7%;">';
             } else if (app.app == "contacts"){
                 icon = '<img src="./img/apps/contacts.png" style="width: 85%;margin-top: 7%;">';
-            }
+            }*/ 
 
 
 

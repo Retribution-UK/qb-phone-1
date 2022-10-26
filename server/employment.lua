@@ -179,10 +179,10 @@ RegisterNetEvent('qb-phone:server:SendEmploymentPayment', function(Job, CID, amo
         ---- Business Account ----
         local BusinessName = ("%s %s"):format(Player.PlayerData.charinfo.firstname, Player.PlayerData.charinfo.lastname)
         local RecieverName = ("%s %s"):format(Reciever.PlayerData.charinfo.firstname, Reciever.PlayerData.charinfo.lastname)
-        local trans = exports['Renewed-Banking']:handleTransaction(Job, title, amt, "Payment given of $"..amt.." given to "..RecieverName, BusinessName, RecieverName, "withdraw")
+        local trans = exports['Renewed-Banking']:handleTransaction(Job, title, amt, "Payment given of £"..amt.." given to "..RecieverName, BusinessName, RecieverName, "withdraw")
 
         ---- Player Account ----
-        exports['Renewed-Banking']:handleTransaction(Reciever.PlayerData.citizenid, title, amt, "Payment recieved of $"..amt.." recieved from Business "..QBCore.Shared.Jobs[Job].label.. " and Manager "..BusinessName, BusinessName, RecieverName, "deposit", trans.trans_id)
+        exports['Renewed-Banking']:handleTransaction(Reciever.PlayerData.citizenid, title, amt, "Payment recieved of £"..amt.." recieved from Business "..QBCore.Shared.Jobs[Job].label.. " and Manager "..BusinessName, BusinessName, RecieverName, "deposit", trans.trans_id)
     else
         if not exports['qb-management']:RemoveMoney(Job, amt) then return notifyPlayer(src, "Insufficient Funds...") end
     end
@@ -414,10 +414,10 @@ AddEventHandler('qb-phone:server:InvoiceHandler', function(paid, amount, source,
             if Config.RenewedBanking then
                 local cid = Player.PlayerData.citizenid
                 local name = ("%s %s"):format(Player.PlayerData.charinfo.firstname, Player.PlayerData.charinfo.lastname)
-                local text = "You paid off an invoice for $"..amount.." from "..bills[source].name.." for "..bills[source].notes
+                local text = "You paid off an invoice for £"..amount.." from "..bills[source].name.." for "..bills[source].notes
                 local trans = exports['Renewed-Banking']:handleTransaction(cid, "Personal // Invoice Transaction", amount, text, bills[source].name, name, "withdraw")
 
-                local text2 = "A invoice issued by "..bills[source].name.." Worth $"..amount.." was paid off by "..name.." for "..bills[source].notes
+                local text2 = "A invoice issued by "..bills[source].name.." Worth £"..amount.." was paid off by "..name.." for "..bills[source].notes
                 exports['Renewed-Banking']:handleTransaction(bills[source].job, "Business // Invoice Transaction", amount, text2, bills[source].name, name, "deposit", trans.trans_id)
                 exports['Renewed-Banking']:addAccountMoney(bills[source].job, amount)
             else

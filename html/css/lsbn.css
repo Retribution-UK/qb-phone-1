@@ -5,7 +5,7 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background: #242833;
+    background: #332424;
 }
 
 .lsbn-header {
@@ -82,7 +82,7 @@
     margin-bottom: 2%;
     padding: 2%;
     color: whitesmoke;
-    background: #2c465f;
+    background: #5f2c2c;
     border-bottom: 0.1vh solid rgba(245, 245, 245, 0.68);
     border-radius: 2px;
 }

@@ -126,7 +126,7 @@
     margin-bottom: 5px;
     align-items: center;
     border-bottom: 2px solid #222;
-    background: rgb(44, 70, 95);
+    background: rgb(95, 44, 44);
     border-radius:10px;
 }
 
@@ -174,7 +174,7 @@
     left: 30vh;
     width: 21vh;
     height: 100%;
-    background: #202731;
+    background: #312020;
     box-shadow: -8px 0px 5px -6px #131313;
 }
 .chat-room-view {
@@ -182,7 +182,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: #202731;
+    background: #312020;
 }
 .chat-room-desc {
     display: flex;
@@ -229,7 +229,7 @@
     width: 100%;
     height: 465px;
     overflow-y: auto;
-    background: #202731;
+    background: #312020;
 }
 
 #members-list::-webkit-scrollbar {
@@ -241,7 +241,7 @@
     display: flex;
     gap: 5px;
     padding: 10px 8px;
-    background: rgb(44, 70, 95);
+    background: rgb(95, 44, 44);
     width: 100%;
     align-items: center;
     margin-top: 4px;
@@ -328,7 +328,7 @@
     width: 100%;
     left: 0;
     position: absolute;
-    background: #202731;
+    background: #312020;
     top: 7.5vh;
     padding: 1vh 1.5vh;
     border-top: 1px solid #111;
@@ -426,7 +426,7 @@
 }
 
 .pinned-chat-icon {
-    background: rgb(44, 70, 95);;
+    background: rgb(95, 44, 44);;
     width: 4vw;
     height: 7vh;
     border-radius: 50%;
@@ -486,7 +486,7 @@
     padding: 5vh 0 5px 0;
     width: 100%;
     justify-content: space-evenly;
-    background: #202731;
+    background: #312020;
     align-items: center;
 }
 .chat-room-title {

@@ -11,8 +11,8 @@ function LoadPlayerMoneys(){
 
     $(".details-phone").html(PlayerPhoneNumber)
     $(".details-bankserial").html(PlayerBankAcc)
-    $(".details-bankmoney").html("$"+numberWithCommas(PlayerBankMoney))
-    $(".details-cashmoney").html("$"+numberWithCommas(PlayerCashMoney))
+    $(".details-bankmoney").html("£"+numberWithCommas(PlayerBankMoney))
+    $(".details-cashmoney").html("£"+numberWithCommas(PlayerCashMoney))
     $(".details-stateid").html(PlayerStateID)
 
     var PlayerLicenses = QB.Phone.Data.PlayerData.metadata.licences;

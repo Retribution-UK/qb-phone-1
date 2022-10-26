@@ -169,7 +169,7 @@ $(document).on('click', '#documents-vehicle', function(e) {
             });
         } else {
             var AddOption = '<div class="casino-text-clear">Nothing Here!</div>'+
-            '<div class="casino-text-clear" style="font-size: 500%;color: #0d1218c0;"><i class="fas fa-frown"></i></div>'
+            '<div class="casino-text-clear" style="font-size: 500%;color: #180d0dc0;"><i class="fas fa-frown"></i></div>'
         $('.documents-list').append(AddOption);
         }
     });
@@ -208,7 +208,7 @@ $(document).on('click', '#documents-licenses', function(e) {
         }
     } else {
         var AddOption = '<div class="casino-text-clear">Nothing Here!</div>'+
-        '<div class="casino-text-clear" style="font-size: 500%;color: #0d1218c0;"><i class="fas fa-frown"></i></div>'
+        '<div class="casino-text-clear" style="font-size: 500%;color: #180d0dc0;"><i class="fas fa-frown"></i></div>'
     $('.documents-list').append(AddOption);
     }
 });

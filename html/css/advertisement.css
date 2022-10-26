@@ -6,7 +6,7 @@
     display: none;
     height: 100%;
     width: 100%;
-    background: #202731;
+    background: #312020;
     overflow: hidden;
 }
 
@@ -126,7 +126,7 @@
 }
 
 .create-advert:hover .test-icon {
-    color: #2c465f;
+    color: #5f2c2c;
     transition: .1s ease-in-out;
     /* animation: Shake 1s infinite; */
 }

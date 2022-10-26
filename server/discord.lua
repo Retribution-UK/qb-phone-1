@@ -79,8 +79,8 @@ AddEventHandler('onResourceStart', function(resource)
                         TriggerEvent('qb-phone:server:sendNewEventMail', room.room_owner_id, {
                             room.room_owner_id,
                             sender = "Discord Rooms",
-                            subject = "Paid Subscription for (" .. room.room_name .. ") $" .. price,
-                            message = "You have been billed for your ownership of the chat channel " .. room.room_name .. " for the amount of $" .. price .. ". If you no longer wish to continue paying, please deactivate the room in your phone app."
+                            subject = "Paid Subscription for (" .. room.room_name .. ") £" .. price,
+                            message = "You have been billed for your ownership of the chat channel " .. room.room_name .. " for the amount of £" .. price .. ". If you no longer wish to continue paying, please deactivate the room in your phone app."
                         })
                     end
                 end
