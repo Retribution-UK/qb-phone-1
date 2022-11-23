@@ -5,7 +5,7 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background: #332424;
+    background: #282828;
 }
 
 .job-header {
@@ -55,7 +55,7 @@
 
 .job-class-body-job{
     color: whitesmoke;
-    background: #5f2c2c;
+    background: #782525;
     transition: 0.2s;
     width: 95%;
     padding: 2%;

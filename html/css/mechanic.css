@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
-.taxi-app {
+.mechanic-app {
     display: none;
     height: 100%;
     width: 100%;
@@ -8,7 +8,7 @@
     background: #282828;
 }
 
-.taxi-header {
+.mechanic-header {
     position: absolute;
     width: 100%;
     height: 12vh;
@@ -17,7 +17,7 @@
     font-size: 1.8vh;
 }
 
-.taxi-taxi-image {
+.mechanic-mechanic-image {
     position: absolute;
     width: 27vh;
     margin: 0 auto;
@@ -26,7 +26,7 @@
     top: 6vh;
 }
 
-.taxis-list {
+.mechanics-list {
     position: absolute;
     width: 100%;
     height: 71%;
@@ -35,11 +35,11 @@
     bottom: 3%;
 }
 
-.taxis-list::-webkit-scrollbar {
+.mechanics-list::-webkit-scrollbar {
     display: none;
 }
 
-.taxi-list {
+.mechanic-list {
     position: relative;
     width: 90.0%;
     height: 6vh;
@@ -47,7 +47,7 @@
     border-bottom: .1vh solid #fff;
 }
 
-.taxi-list-fullname {
+.mechanic-list-fullname {
     position: absolute;
     top: 10%;
     font-size: 1.3vh;
@@ -58,7 +58,7 @@
     color: white;
 }
 
-.taxi-list-phone {
+.mechanic-list-phone {
     position: absolute;
     top: 50%;
     font-size: 1.3vh;
@@ -66,7 +66,7 @@
     color: white;
 }
 
-.taxi-list-call {
+.mechanic-list-call {
     color: white;
     position: absolute;
     top: 25%;
@@ -75,11 +75,11 @@
     font-size: 2vh;
 }
 
-.taxi-list-call:hover i {
+.mechanic-list-call:hover i {
     color: rgb(179, 179, 179);
 }
 
-.notaxidrivers {
+.nomechanics {
     width: 100%;
     text-align: center;
     font-family: 'Arial', sans-serif;
@@ -89,7 +89,7 @@
     line-height: 20vh;
 }
 
-#taxi-frown {
+#mechanic-frown {
     position: absolute;
     top: 15.5%;
     left: 41.5%;

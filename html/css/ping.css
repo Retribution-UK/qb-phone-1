@@ -5,7 +5,7 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background: #332424;
+    background: #282828;
 }
 
 .ping-header {
@@ -102,7 +102,7 @@
 }
 
 .ping-sender-piinger:hover{
-    background: rgb(111, 37, 37);
+    background: rgb(120, 37, 37);
 }
 
 .ping-menu-text{

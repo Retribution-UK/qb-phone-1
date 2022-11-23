@@ -9,24 +9,24 @@ function formatPhoneNumber(phoneNumberString) {
     return phoneNumberString;
 }
 
-SetupTaxiDrivers = function(data) {
-    $(".taxis-list").html("");
+SetupMechanics = function(data) {
+    $(".mechanics-list").html("");
     $.each(data, function(job, jobData) {
-        $(".taxis-list").append(`<h1 style="font-size:1.64vh; padding:1.02vh; color:#fff; margin-top:0; width:100%; display:block; background-color: #782525;">Available Drivers</h1>`);
+        $(".mechanics-list").append(`<h1 style="font-size:1.64vh; padding:1.02vh; color:#fff; margin-top:0; width:100%; display:block; background-color: #782525;">Available Drivers</h1>`);
         $.each(jobData.Players, function(i, player) {
-            $(".taxis-list").append(`<div class="taxi-list" id=${player.Phone}> <div class="taxi-list-fullname">${player.Name}</div> <div class="taxi-list-phone">${formatPhoneNumber(player.Phone)}</div> <div class="taxi-list-call"><i class="fas fa-phone"></i></div></div>`);
+            $(".mechanics-list").append(`<div class="mechanic-list" id=${player.Phone}> <div class="mechanic-list-fullname">${player.Name}</div> <div class="mechanic-list-phone">${formatPhoneNumber(player.Phone)}</div> <div class="mechanic-list-call"><i class="fas fa-phone"></i></div></div>`);
         });
 
         if (jobData.Players.length === 0) {
-            $(".taxis-list").append('<p class="notaxidrivers">None Available! <i class="fas fa-frown" id="taxi-frown"></i></p>');
+            $(".mechanics-list").append('<p class="nomechanics">None Available! <i class="fas fa-frown" id="taxi-frown"></i></p>');
         }
-        $(".taxis-list").append("<br>");
+        $(".mechanics-list").append("<br>");
     });
 }
 
 // On Click
 
-$(document).on('click', '.taxi-list-call', function(e){
+$(document).on('click', '.mechanic-list-call', function(e){
     e.preventDefault();
     var Number = $(this).parent().attr('id');
     if (Number != undefined){

@@ -364,6 +364,19 @@ Config.PhoneApplications = {
         blockedjobs = {},
         slot = 26,
         Alerts = 0,
+    },
+    ["mechanic"] = {
+        app = "mechanic",
+        color = "#ffc900",
+        color2 = "#f7c816",
+        icon = "fas fa-wrench",
+        tooltipText = "Mechanics",
+        tooltipPos = "bottom",
+        style = "font-size: 3vh";
+        job = false,
+        blockedjobs = {},
+        slot = 27,
+        Alerts = 0,
     },--[[ 
     ["meos"] = {
         app = "meos",
@@ -383,39 +396,50 @@ Config.MaxSlots = 28
 Config.JobCenter = {
     [1] = {
         vpn = false,
-        label = "Towing",
-        event = "qb-phone:jobcenter:tow",
+        label = "Taxi",
+        event = "qb-phone:jobcenter:taxi",
     },
     [2] = {
         vpn = false,
-        label = "Taxi",
-        event = "qb-phone:jobcenter:taxi",
-    },--[[ 
+        label = "PostOp Worker",
+        event = "qb-phone:jobcenter:postop",
+    },
     [3] = {
-        vpn = true,
-        label = "House Robbery",
-        event = "sn-houserobbery:client:chiduong",
+        vpn = false,
+        label = "Sanitation Worker",
+        event = "qb-phone:jobcenter:sanitation",
     },
     [4] = {
         vpn = true,
         label = "Oxy Run",
         event = "sn-oxyrun:client:chiduong",
-    }, ]]
-    [3] = {
-        vpn = false,
-        label = "PostOp Worker",
-        event = "qb-phone:jobcenter:postop",
     },
-    [4] = {
+    [5] = {
+        vpn = true,
+        label = "Chop Shop",
+        event = "sn-chopshop:client:chiduong",
+    }, --[[ 
+    [] = {
         vpn = false,
-        label = "Sanitaion Worker",
-        event = "qb-phone:jobcenter:sanitation",
-    },
+        label = "Towing",
+        event = "qb-phone:jobcenter:tow",
+    }, ]]--[[ 
+    [] = {
+        vpn = true,
+        label = "House Robbery",
+        event = "sn-houserobbery:client:chiduong",
+    },]]
 }
 
 Config.TaxiJob = {
     {
         Job = "taxi",
+    },
+}
+
+Config.MechanicJob = {
+    {
+        Job = "ottos", "ace",
     },
 }
 

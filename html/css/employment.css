@@ -4,7 +4,7 @@
     display: none;
     height: 100%;
     width: 100%;
-    background-color: #322121;
+    background-color: #282828;
     overflow: hidden;
 }
 
@@ -71,7 +71,7 @@
     color: white;
     height: 6vh;
     margin-bottom: 8px;
-    background-color: rgb(95, 44, 44);
+    background-color: rgb(120, 37, 37);
     box-shadow: rgba(0, 0, 0, 0.557) 0rem 0rem 0.1rem 0.01rem;
     border-bottom: .1vh solid #fff;
 }
@@ -82,7 +82,7 @@
     color: white;
     height: 6vh;
     margin-bottom: 8px;
-    background-color: rgb(95, 44, 44);
+    background-color: rgb(120, 37, 37);
     box-shadow: rgba(0, 0, 0, 0.557) 0rem 0rem 0.1rem 0.01rem;
     border-bottom: .1vh solid #fff;
 }
@@ -242,7 +242,7 @@
 }
 
 .employment-action-buttons > i:hover {
-    color: #5f2c2c;
+    color: #782525;
 }
 
 .employment-job-list:hover .employment-action-buttons {
@@ -262,7 +262,7 @@
     font-size: 14px;
     color: #ffffff;
     text-align: left;
-    background-color: rgb(95, 44, 44);
+    background-color: rgb(120, 37, 37);
     outline: none;
     border-bottom: .1vh solid #fff;
 }

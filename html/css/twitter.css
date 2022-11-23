@@ -4,7 +4,7 @@
     display: none;
     height: 100%;
     width: 100%;
-    background: #322121;
+    background: #282828;
     overflow: hidden;
 }
 
@@ -47,7 +47,7 @@
     height: auto;
     width: 80%;
     margin-bottom: 1.0vh;
-    background-color: #bf1515;
+    background-color: #1588bf;
     border-radius: 5px;
     left: 10.0%;
     color: white;
@@ -176,7 +176,7 @@
     position: relative;
     height: 4.5vh;
     width: 100%;
-    background-color: #322121;
+    background-color: #282828;
 }
 
 .twitter-footer > p {
@@ -247,7 +247,7 @@
     height: 11.5vh;
     bottom: 3.0vh;
     outline: 1.5px ridge rgb(255, 255, 255);
-    background-color: #bf1515;
+    background-color: #1588bf;
 }
 
 .tweet-eye {

@@ -5,7 +5,7 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background: #332424;
+    background: #282828;
 }
 
 .casino-header {
@@ -56,7 +56,7 @@
     position: relative;
     left: 80%;
     width: 15%;
-    background: #5f2c2c;
+    background: #782525;
     color: whitesmoke;
     text-align: center;
     border-radius: 4px;
@@ -91,7 +91,7 @@
     margin-bottom: 2%;
     color: whitesmoke;
     border-radius: 4px;
-    background: #5f2c2c;
+    background: #782525;
     transition: 0.2s;
     font-size: 130%;
 }

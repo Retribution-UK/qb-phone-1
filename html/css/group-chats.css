@@ -2,7 +2,7 @@
     display: none;
     height: 100%;
     width: 100%;
-    background:  #312020;
+    background:  #282828;
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
     color: #ddd;
@@ -126,7 +126,7 @@
     margin-bottom: 5px;
     align-items: center;
     border-bottom: 2px solid #222;
-    background: rgb(95, 44, 44);
+    background: rgb(120, 37, 37);
     border-radius:10px;
 }
 
@@ -174,7 +174,7 @@
     left: 30vh;
     width: 21vh;
     height: 100%;
-    background: #312020;
+    background: #782525;
     box-shadow: -8px 0px 5px -6px #131313;
 }
 .chat-room-view {
@@ -182,7 +182,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: #312020;
+    background: #282828;
 }
 .chat-room-desc {
     display: flex;
@@ -229,7 +229,7 @@
     width: 100%;
     height: 465px;
     overflow-y: auto;
-    background: #312020;
+    background: #782525;
 }
 
 #members-list::-webkit-scrollbar {
@@ -241,7 +241,7 @@
     display: flex;
     gap: 5px;
     padding: 10px 8px;
-    background: rgb(95, 44, 44);
+    background: rgb(120, 37, 37);
     width: 100%;
     align-items: center;
     margin-top: 4px;
@@ -328,7 +328,7 @@
     width: 100%;
     left: 0;
     position: absolute;
-    background: #312020;
+    background: #782525;
     top: 7.5vh;
     padding: 1vh 1.5vh;
     border-top: 1px solid #111;
@@ -341,7 +341,7 @@
     margin-top: 5px;
     height: 23vh;
     overflow-y: auto;
-    background: #312020;
+    background: #782525;
 }
 
 .search-results #close-search {
@@ -426,7 +426,7 @@
 }
 
 .pinned-chat-icon {
-    background: rgb(95, 44, 44);;
+    background: rgb(120, 37, 37);;
     width: 4vw;
     height: 7vh;
     border-radius: 50%;
@@ -455,7 +455,7 @@
     border: 1px solid #111;
     border-radius: 6px;
     margin-top: 5px;
-    background: rgb(95, 44, 44);
+    background: rgb(120, 37, 37);
 }
 
 .group-chat-message-contents img {
@@ -486,7 +486,7 @@
     padding: 5vh 0 5px 0;
     width: 100%;
     justify-content: space-evenly;
-    background: #312020;
+    background: #282828;
     align-items: center;
 }
 .chat-room-title {
@@ -563,7 +563,7 @@
     margin-top: 2px;
     border-radius: 3px;
     padding: 5px 45px 5px 10px;
-    background: #2a1a1a;
+    background: #181818;
     color: #ddd;
 }
 
@@ -582,7 +582,7 @@
     width: 85%;
     top: 50%;
     left: 50%;
-    background: #312020;
+    background: #782525;
     transform: translateX(-50%) translateY(-50%);
     z-index: 999;
     transition: all 0.2s ease;
@@ -813,7 +813,7 @@
     margin: 1.4vh auto;
     text-align: center;
     padding: 5px;
-    border: 3px dashed rgb(95, 44, 44);
+    border: 3px dashed rgb(120, 37, 37);
     border-radius: 4px;
 }
 
