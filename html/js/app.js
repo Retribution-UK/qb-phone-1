@@ -156,7 +156,7 @@ $(document).on('click', '.phone-application', function(e){
                 if (PressedApplication == "twitter") {
                     if (QB.Phone.Data.IsOpen) {
                         $.post('https://qb-phone/GetTweets', JSON.stringify({}), function(Tweets){
-                            QB.Phone.Notifications.LoadTweets(Tweets);
+                            QB.Phone.Notifications.LoadTweets(Tweets.TweetData, Tweets.hasVPN);
                         });
                     }
                 } else if (PressedApplication == "bank") {
@@ -218,6 +218,14 @@ $(document).on('click', '.phone-application', function(e){
                     $.post('https://qb-phone/GetAvailableTaxiDrivers', JSON.stringify({}), function(data){
                         SetupTaxiDrivers(data);
                     });
+                } else if (PressedApplication == "mechanic") {
+                    $.post('https://qb-phone/GetAvailableMechanics', JSON.stringify({}), function(data){
+                        SetupMechanics(data);
+                    });
+                } else if (PressedApplication == "recovery") {
+                    $.post('https://qb-phone/GetAvailableRecovery', JSON.stringify({}), function(data){
+                        SetupRecovery(data);
+                    });
                 }
                 else if (PressedApplication == "gallery") {
                     $.post('https://qb-phone/GetGalleryData', JSON.stringify({}), function(data){
@@ -268,10 +276,6 @@ $(document).on('click', '.phone-application', function(e){
                         QB.Phone.Functions.HeaderTextColor("white", 100);
                         QB.Phone.Functions.LoadChatRooms(ChatRooms)
                     })
-                } else if (PressedApplication == "mechanic") {
-                    $.post('https://qb-phone/GetAvailableMechanics', JSON.stringify({}), function(data){
-                        SetupMechanics(data);
-                    });
                 }
             }
         }
@@ -375,7 +379,7 @@ $(document).on('click', '.phone-tab-button', function(event){
 
 QB.Phone.Functions.Open = function(data) {
     QB.Phone.Animations.BottomSlideUp('.container', 500, -6.6);
-    QB.Phone.Notifications.LoadTweets(data.Tweets);
+    QB.Phone.Notifications.LoadTweets(data.Tweets, data.hasVPN);
     QB.Phone.Data.IsOpen = true;
 }
 
@@ -833,7 +837,7 @@ $(document).ready(function(){
                 break;
             case "UpdateTweets":
                 if (QB.Phone.Data.currentApplication == "twitter") {
-                    QB.Phone.Notifications.LoadTweets(event.data.Tweets);
+                    QB.Phone.Notifications.LoadTweets(event.data.Tweets, event.data.hasVPN);
                 }
                 break;
 

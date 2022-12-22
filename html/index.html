@@ -41,6 +41,7 @@
     <link rel="stylesheet" href="./css/publicphone.css">
     <link rel="stylesheet" href="./css/group-chats.css">
     <link rel="stylesheet" href="./css/mechanic.css">
+    <link rel="stylesheet" href="./css/recovery.css">
 
     <!-- CDN's -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <!-- JQuery -->
@@ -1058,6 +1059,10 @@
                             <div class="phone-menu-main">
                                 <input class="phone-menu-text twt-box-textt-input" type="text" maxlength="200"><i class="fas fa-sticky-note" id="phone-menu-icon"></i><span class="phone-menu-title">Message</span>
                                 <input class="phone-menu-text twt-box-image-input" type="text"><i class="fas fa-image" id="phone-menu-icon"></i><span class="phone-menu-title">URL (JPG/PNG)</span>
+                                <div class="tweet-anonymous">
+                                    <input type="checkbox" id="anonymous-tweet" name="anonymous-tweet">
+                                    <label for="anonymous-tweet">Anonymous</label>
+                                </div>
                                 <p> </p>
                                 <div class="phone-menu-button phone-menu-cancel" id="box-new-cancel">Cancel</div>
                                 <div class="phone-menu-button phone-menu-accept" id="twt-sendmessage-chat">Post</div>
@@ -1279,14 +1284,18 @@
                         </div>
                         <div class="modal-overlay" style="display: none;"></div>
                     </div>
-
-
                     <div class="mechanic-app">
                         <div class="mechanic-header">
-                            <img src="./img/taxi.png" class="taxi-taxi-image">
+                            <img src="./img/mechanic.png" class="mechanic-mechanic-image">
                         </div>
-
                         <div class="mechanics-list">
+                        </div>
+                    </div>
+                    <div class="recovery-app">
+                        <div class="recovery-header">
+                            <img src="./img/recovery.png" class="recovery-recovery-image">
+                        </div>
+                        <div class="recoverys-list">
                         </div>
                     </div>
 
@@ -1377,6 +1386,8 @@
         <script src="./js/lsbn.js"></script>
         <script src="./js/publicphone.js"></script>
         <script src="./js/group-chats.js"></script>
+        <script src="./js/mechanic.js"></script>
+        <script src="./js/recovery.js"></script>
         <script type="text/javascript">$('#whatsapp-openedchat-message').emojioneArea({inline: true, searchPosition: "bottom", shortnames: true})</script>
     </body>
 </html>

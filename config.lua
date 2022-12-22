@@ -275,7 +275,7 @@ Config.PhoneApplications = {
         blockedjobs = {},
         slot = 19,
         Alerts = 0,
-    },
+    },--[[ 
     ["casino"] = {
         app = "casino",
         color = "#000100",
@@ -288,7 +288,7 @@ Config.PhoneApplications = {
         blockedjobs = {},
         slot = 20,
         Alerts = 0,
-    },
+    }, ]]
     ["calculator"] = {
         app = "calculator",
         color = "#c94001",
@@ -326,18 +326,6 @@ Config.PhoneApplications = {
         blockedjobs = {},
         slot = 23,
         Alerts = 0,
-    }, ]]
-    ["bank"] = {
-        app = "bank",
-        color = "#9c88ff",
-        color2 = "#8070d5",
-        icon = "fas fa-file-contract",
-        tooltipText = "Invoices",
-        style = "font-size: 2.7vh";
-        job = false,
-        blockedjobs = {},
-        slot = 24,
-        Alerts = 0,
     },
     ["gopro"] = {
         app = "gopro",
@@ -351,7 +339,19 @@ Config.PhoneApplications = {
         blockedjobs = {},
         slot = 25,
         Alerts = 0,
-    },
+    }, 
+    ["bank"] = {
+        app = "bank",
+        color = "#9c88ff",
+        color2 = "#8070d5",
+        icon = "fas fa-file-contract",
+        tooltipText = "Invoices",
+        style = "font-size: 2.7vh";
+        job = false,
+        blockedjobs = {},
+        slot = 24,
+        Alerts = 0,
+    },]]
     ["group-chats"] = {
         app = "group-chats",
         color = "#7289da",
@@ -367,17 +367,31 @@ Config.PhoneApplications = {
     },
     ["mechanic"] = {
         app = "mechanic",
-        color = "#ffc900",
-        color2 = "#f7c816",
+        color = "#7700ff",
+        color2 = "#7816f7",
         icon = "fas fa-wrench",
         tooltipText = "Mechanics",
         tooltipPos = "bottom",
         style = "font-size: 3vh";
         job = false,
         blockedjobs = {},
-        slot = 27,
+        slot = 20,
         Alerts = 0,
-    },--[[ 
+    },
+    ["recovery"] = {
+        app = "recovery",
+        color = "#00c3ff",
+        color2 = "#16bbf7",
+        icon = "fas fa-life-ring",
+        tooltipText = "Recovery",
+        tooltipPos = "bottom",
+        style = "font-size: 3vh";
+        job = false,
+        blockedjobs = {},
+        slot = 25,
+        Alerts = 0,
+    },
+    --[[ 
     ["meos"] = {
         app = "meos",
         color = "#004682",
@@ -439,7 +453,13 @@ Config.TaxiJob = {
 
 Config.MechanicJob = {
     {
-        Job = "ottos", "ace",
+        Job = "ottos",
+    },
+}
+
+Config.RecoveryJob = {
+    {
+        Job = "tow",
     },
 }
 

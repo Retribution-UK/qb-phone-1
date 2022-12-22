@@ -12,13 +12,13 @@ function formatPhoneNumber(phoneNumberString) {
 SetupMechanics = function(data) {
     $(".mechanics-list").html("");
     $.each(data, function(job, jobData) {
-        $(".mechanics-list").append(`<h1 style="font-size:1.64vh; padding:1.02vh; color:#fff; margin-top:0; width:100%; display:block; background-color: #782525;">Available Drivers</h1>`);
+        $(".mechanics-list").append(`<h1 style="font-size:1.64vh; padding:1.02vh; color:#fff; margin-top:0; width:100%; display:block; background-color: #782525;">Available Mechanics</h1>`);
         $.each(jobData.Players, function(i, player) {
             $(".mechanics-list").append(`<div class="mechanic-list" id=${player.Phone}> <div class="mechanic-list-fullname">${player.Name}</div> <div class="mechanic-list-phone">${formatPhoneNumber(player.Phone)}</div> <div class="mechanic-list-call"><i class="fas fa-phone"></i></div></div>`);
         });
 
         if (jobData.Players.length === 0) {
-            $(".mechanics-list").append('<p class="nomechanics">None Available! <i class="fas fa-frown" id="taxi-frown"></i></p>');
+            $(".mechanics-list").append('<p class="nomechanics">None Available! <i class="fas fa-frown" id="mechanic-frown"></i></p>');
         }
         $(".mechanics-list").append("<br>");
     });

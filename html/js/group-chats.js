@@ -300,7 +300,7 @@ RenderChatMessages = (messages) => {
                             <div class="group-chat-message-from">${chat.member_name}</div>
                             <div class="group-chat-message-time">${chatTime}</div>
                         </div>
-                        <div class="group-chat-message-contents" ${chat.is_pinned ? 'style="border-style:dashed;border-color:#FFFF33;background:rgb(95, 44, 44)"' : ''}>
+                        <div class="group-chat-message-contents" ${chat.is_pinned ? 'style="border-style:dashed;border-color:#FFFF33;background:rgb(44, 70, 95)"' : ''}>
                             <a href="#" class="pin-message" data-pinned="${chat.is_pinned}" data-roomid="${chat.room_id}" data-messageid="${chat.id}"><i class="fa fa-thumbtack"></i></a>
                             ${split}
                         </div>
@@ -557,7 +557,7 @@ $('#pinned-messages').on('click', e => {
                                     <div class="group-chat-message-from">${chat.member_name}</div>
                                     <div class="group-chat-message-time">${chatTime}</div>
                                 </div>
-                                <div class="group-chat-message-contents" ${chat.is_pinned ? 'style="border-style:dashed;border-color:#FFFF33;background:rgb(95, 44, 44)"' : ''}>
+                                <div class="group-chat-message-contents" ${chat.is_pinned ? 'style="border-style:dashed;border-color:#FFFF33;background:rgb(44, 70, 95)"' : ''}>
                                     <a href="#" class="pin-message" data-pinned="${chat.is_pinned}" data-roomid="${chat.room_id}" data-messageid="${chat.id}"><i class="fa fa-thumbtack"></i></a>
 
                                     ${split}

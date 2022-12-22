@@ -4,7 +4,7 @@
     display: none;
     height: 100%;
     width: 100%;
-    background: #782525;
+    background: rgb(36, 36, 36);
     overflow: hidden;
 }
 
@@ -17,7 +17,7 @@
     display: block;
     height: 14vh;
     width: 100%;
-    background: #782525;
+    background: rgb(36, 36, 36);
 }
 
 .mail-list {
