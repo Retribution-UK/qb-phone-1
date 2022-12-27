@@ -18,7 +18,7 @@ SetupRecovery = function(data) {
         });
 
         if (jobData.Players.length === 0) {
-            $(".recoverys-list").append('<p class="norecovery">None Available! <i class="fas fa-frown" id="recovery-frown"></i></p>');
+            $(".recoverys-list").append('<p class="norecoverys">None Available! <i class="fas fa-frown" id="recovery-frown"></i></p>');
         }
         $(".recoverys-list").append("<br>");
     });
